@@ -29,7 +29,8 @@ module.exports = {
         DEFAULT: '#273029',
         heavy: '#1b211c'
       },
-      grey: {
+      grey: '#888888',
+      orange: {
         DEFAULT: '#f2994a',
         hover: '#da863c'
       },
