@@ -36,6 +36,7 @@ const customIcon = new Icon({
     iconSize: [40, 40]
 })
 
+
 const Map = () => {
 
     const isMobile = useMediaQuery({

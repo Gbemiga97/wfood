@@ -14,17 +14,12 @@ const Header = () => {
     const [active, setActive] = useState(false)
 
     useEffect(() => {
-        const handleScroll = () => {
-            //detect scroll
-            setActive(window.scrollY > 100);
-        }
+        window.addEventListener('scroll', () => {
+            window.scrollY > 80 ? setActive(true) : setActive(false)
+        })
+    })
 
-        //add event listener
-        window.addEventListener('scroll', handleScroll)
 
-        //clear event listener
-       return () =>  window.removeEventListener('scroll', handleScroll)
-    }, [])
 
   return (
     <header className={`${active ? 'bg-black-heavy py-4' : 'bg-none py-8'}
