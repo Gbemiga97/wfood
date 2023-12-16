@@ -16,7 +16,7 @@ export default function Home() {
     <Menu />
     <Reservation />
     <About />
-    <Map />
+    {/* <Map /> */}
     <Footer />
     {/* <div className="h-[4000px]" /> */}
   </main>
